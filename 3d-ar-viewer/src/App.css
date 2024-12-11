@@ -1,0 +1,160 @@
+/* App.css */
+
+/* Basic layout and styles for the app */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #353333;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Container for the product list */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: #f3f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  color: #777;
+  font-size: 14px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.discount {
+  font-size: 14px;
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+/* AR View and Buttons */
+.ar-view {
+  text-align: center;
+}
+
+.ar-button, .back-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ar-button {
+  background-color: #007BFF;
+  transition: background-color 0.3s ease;
+  flex-grow: 1; /* Makes the button take up available space on the right */
+  text-align: center; /* Center the text */
+  margin-right: 10px; /* Add spacing between the buttons */
+  margin-left: 10px; /* Add spacing between the buttons */
+}
+
+.back-button {
+  background-color: #28a745;
+  transition: background-color 0.3s ease;
+  flex-grow: 1; /* Makes the button take up available space on the right */
+  text-align: center; /* Center the text */
+  margin-right: 10px; /* Add spacing between the buttons */
+  margin-left: 10px;
+}
+
+.ar-button:hover, .back-button:hover {
+  background-color: #0056b3;
+}
+
+.ar-button:active, .back-button:active {
+  background-color: #004085;
+}
+
+/* Basic layout for the buttons container */
+.btn {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the buttons */
+  align-items: center; /* Vertically align the buttons */
+  width: 100%; /* Ensure the container spans the full width */
+  margin-top: 20px; /* Add spacing above the buttons */
+}
+
+/* Style for the "View" button */
+.view-button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1; /* Makes the button take up available space on the left */
+  text-align: center; /* Center the text */
+}
+
+/* Style for the "Add to Cart" button */
+.addToCartButton {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Space between buttons */
+}
+
+/* Hover and active state styles for both buttons */
+.view-button:hover, .addToCartButton:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+.view-button:active, .addToCartButton:active {
+  background-color: #004085; /* Even darker shade when active */
+}
